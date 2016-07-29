@@ -33,10 +33,63 @@
 			<input type="month" name="date-month"> <!--HTML5 exclusive, IE9 and below might not recognize this -->
 		</p>
 
+        <p>
+			<label>Month and Year or birth (old style with listings)</label><br>
+			<select value="month">
+                <option value="jan" label="January"></option>
+                <option value="feb" label="February"></option>
+                <option value="mar" label="March"></option>
+                <option value="apr" label="April"></option>
+                <option value="may" label="May"></option>
+                <option value="jun" label="June"></option>
+                <option value="jul" label="July"></option>
+                <option value="aug" label="August"></option>
+                <option value="sep" label="September"></option>
+                <option value="oct" label="October"></option>
+                <option value="nov" label="November"></option>
+                <option value="dev" label="December"></option>
+            </select>
+            
+            <select value="year">
+                <option value="1988" label="1988"></option>
+                <option value="1989" label="1989"></option>
+                <option value="1990" label="1990"></option>
+                <option value="1991" label="1991"></option>
+            </select>
+		</p>
+            
 		<p>
 		<label>Skills and Technologies</label><br>
-		<!-- paused here, to google: how to make list with multiple selection -->
-
+        <select size="10">
+            <optgroup label="Tech skills">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="git">Git</option>
+            </optgroup>
+            <optgroup label="Soft skills">
+                <option value="timeman">Time management</option>
+                <option value="proact">Proactivity</option>
+                <option value="teamwork">Teamwork</option>
+                <option value="leadership">Leadership</option>
+            </optgroup>
+        </select>
+        </p>
+            
+        <p>
+        <label>Photo</label><br>
+        <input type="file" name="photo">
+        </p>
+        
+        <p>
+        <label>Comments</label><br>
+        <textarea rows="4" cols="20" name="comments"></textarea>
+        </p>    
+        
+        <p>
+            <input type="submit" value="Save">
+        </p>
+        
 		</form>
 	</body>
 </html>
