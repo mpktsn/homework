@@ -1,0 +1,63 @@
+/* Stylesheet for Task 1 */
+
+p {
+  font-size: 1.2em;
+}
+
+h1 {
+  text-align: right;
+  color: orange;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+p em {
+  background: green;
+  color: white;
+}
+
+p:first-letter {
+  color: red;
+  font-size: 36px;
+}
+
+#allotment h2  {
+  color: orange;
+  font-size: 30px;
+}
+
+#allotment ul li {
+  font-weight: bold;
+}
+
+#allotment ol.fruits-list li {
+  color: gray;
+  font-weight: 400;
+}
+
+#allotment ol.vegetables-list li {
+  color: red;
+  font-weight: 400;
+}
+
+#warehouse h2 {
+  color: blue;
+  font-size: 30px;
+}
+
+#warehouse ul li {
+  font-weight: bold;
+}
+
+#warehouse ol.fruits-list li {
+  color: green;
+  font-weight: 400;
+}
+
+#warehouse ol.vegetables-list li {
+  color: red;
+  font-weight: 400;
+  
+  /* Table */
+  
+  
