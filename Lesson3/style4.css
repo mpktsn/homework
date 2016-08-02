@@ -1,0 +1,18 @@
+ul li a {
+  font-size: 24px;
+}
+
+ul li a[href*="http"] {
+  color: #f70;
+}
+
+ul li a[target="_blank"]::after {
+  content: "⇱";
+  display:inline-block;
+  transform: scaleX(-1); 
+  /* You can't rotate/scale inline tag contents (which is "a"), so first we must assign 'block' or 'inline-block' display type. */
+}
+
+ul li a[href*="google"] {
+  color: #666;
+}
