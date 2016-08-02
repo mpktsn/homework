@@ -1,0 +1,9 @@
+/* quite fun that p:first-child didn't work but then I realized its not a first child, but a second (article -> header p). Though, :first-of-type pseudoclass will work just fine. */
+
+article p:nth-child(2) {
+  font-size: 24px;
+}
+
+article p:last-child {
+  color: #999;
+}
