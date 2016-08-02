@@ -57,7 +57,18 @@ p:first-letter {
 #warehouse ol.vegetables-list li {
   color: red;
   font-weight: 400;
-  
+}
+
   /* Table */
   
-  
+.students-table tbody tr > td:first-child {
+  background: none;
+  color: orange;
+  text-align: left;
+}
+
+.students-table tbody tr > td {
+  background: green;
+  color: white;
+  text-align: center;
+}
