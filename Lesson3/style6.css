@@ -1,3 +1,75 @@
-#red {
-  
+/* Describing things */
+
+.red {
+  border: 1px solid red;
+  border-radius: 3px;
+  background: red;
+  color: white;
+  display: none;
+}
+
+.green {
+  border: 1px solid green;
+  border-radius: 3px;
+  background: green;
+  color: white;
+  display: none;
+}
+
+.blue {
+  border: 1px solid blue;
+  border-radius: 3px;
+  background: blue;
+  color: white;
+  display: none;
+}
+
+label[for="red"] {
+  color: #ffb9b9;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+label[for="green"] {
+  color: #b9ffaf;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+label[for="blue"] {
+  color: #afc4ff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Checkbox magic */
+
+#red:checked ~ label[for="red"] {
+  color: #f00;
+}
+
+#green:checked ~ label[for="green"] {
+  color: green;
+}
+
+#blue:checked ~ label[for="blue"] {
+  color: #00f;
+}
+
+#red:checked ~ .red {
+  display: inline;
+}
+
+#green:checked ~ .green {
+  display: inline;
+}
+
+#blue:checked ~ .blue {
+  display: inline;
+}
+
+/* Hiding checkboxes */
+
+input[type="checkbox"] {
+  display: none;
 }
